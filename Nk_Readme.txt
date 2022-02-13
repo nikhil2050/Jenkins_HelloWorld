@@ -251,6 +251,19 @@ Also refer Tutoria #14
 			Save
 
 -- --------------------------
+Jenkins Beginner Tutorial 18 - How to create Build Monitor View
+
+	Step1: Install "Build Monitor Plugin" OR Download : Build Monitor Plugin (Plugin Id: ?build-monitor-plugin)
+
+	Step2: Add Build Pipeline View:
+			"Jenkins dashboard" >> Add "View" (+ button on tab)
+			View: MyBuildMonitor1
+			Select "Build Monitor View"
+			Components >> Add
+				- Jobs:	Select All Jobs
+			OK
+			
+-- --------------------------
 Jenkins Beginner Tutorial 16 - What is BLUE OCEAN (How to get started)
 
 Note: Available for Jenkins v2.7+
@@ -258,4 +271,22 @@ Install "Blue Ocean" plugin
 Switch to Blue Ocean from button provided on top.
 
 -- --------------------------
+Jenkins Beginner Tutorial 17 - How to Trigger Job with Email | Poll Mailbox Trigger Plugin
 
+.....
+
+-- --------------------------
+How to install Jenkins on Amazon AWS EC2 Linux | 8 Steps
+https://www.youtube.com/watch?v=jmm8DsosBqw&list=PLhW3qG5bs-L_ZCOA4zNPSoGbnVQ-rp_dG&index=20
+
+-- --------------------------
+Jenkinsfile Beginner Tutorial 1 | What is Jenkinsfile | How to create jenkinsfile | Step by Step
+https://www.youtube.com/watch?v=RsD2nzPY0is&list=PLhW3qG5bs-L_ZCOA4zNPSoGbnVQ-rp_dG&index=21
+
+-- --------------------------
+Jenkinsfile Beginner Tutorial 2 | How to get Jenkinsfile from Git SCM
+https://www.youtube.com/watch?v=8IWH1cYVZt4&list=PLhW3qG5bs-L_ZCOA4zNPSoGbnVQ-rp_dG&index=22
+
+-- --------------------------
+Jenkinsfile Beginner Tutorial 3 | Jenkins Pipeline | How to clone a git repo using Jenkinsfile |
+https://www.youtube.com/watch?v=r5nfUWVlGH4&list=PLhW3qG5bs-L_ZCOA4zNPSoGbnVQ-rp_dG&index=23
