@@ -176,7 +176,7 @@ BUILD >> DEPLOY >> TEST >> RELEASE
 				- Tomcat Url : http://localhost:8080
 	
 	Step6: Build Now
-
+    Step7: Visit and verify the deployment on http://localhost:8080/sample/
 
 -- --------------------------
 Jenkins Beginner Tutorial 12 - Notifications - How to send Email from Jenkins
@@ -200,3 +200,10 @@ Configure System >> Email Notification
 		Email Notification:
 			Recipients
 	
+-- --------------------------
+Jenkins Beginner Tutorial 13 - What is Pipeline in Jenkins (DevOps)
+
+Pipeline:
+    - It is workflow with group of events/jobs that are chained and integrated with eachother in sequence
+    - Every job in pipeline has dependency on 1/more other jobs.
+    
