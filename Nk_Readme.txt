@@ -207,3 +207,29 @@ Pipeline:
     - It is workflow with group of events/jobs that are chained and integrated with eachother in sequence
     - Every job in pipeline has dependency on 1/more other jobs.
     
+-- --------------------------
+Jenkins Beginner Tutorial 14 - How to setup DELIVERY PIPELINE in Jenkins (Step by Step)
+
+	Step1: Chain required Jobs in sequence (using Build Triggers in DeployJob and TestJob)
+	Step1a: Create Jenkins Job "Test4_Pipeline_BuildJob" >> Freestyle project >> OK
+			Build:
+				echo "Build Job completed"
+
+	Step1b: Create Jenkins Job "Test4_Pipeline_DeployJob" >> Freestyle project >> OK
+			Build:
+				echo "Deploy Job completed"
+
+	Step1c: Create Jenkins Job "Test4_Pipeline_TestJob" >> Freestyle project >> OK
+			Build:
+				echo "Test Job completed"
+	
+	Step2: Install "Delivery Pipeline Plugin" OR Download : Delivery Pipeline Plugin (Plugin Id: delivery-pipeline0plugin)
+	
+	Step3: "Jenkins dashboard" >> Add "View" (+ button on tab)
+			View: MyTestDeliveryPipeline
+			Select "Delivery Pipeline View"
+			Components >> Add
+				- Initial Job:	"Test4_Pipeline_BuildJob"
+				- Name: 		My Build Job
+			Save
+	
