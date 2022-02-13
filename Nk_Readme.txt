@@ -223,7 +223,7 @@ Jenkins Beginner Tutorial 14 - How to setup DELIVERY PIPELINE in Jenkins (Step b
 			Build:
 				echo "Test Job completed"
 	
-	Step2: Install "Delivery Pipeline Plugin" OR Download : Delivery Pipeline Plugin (Plugin Id: delivery-pipeline0plugin)
+	Step2: Install "Delivery Pipeline Plugin" OR Download : Delivery Pipeline Plugin (Plugin Id: delivery-pipeline-plugin)
 	
 	Step3: "Jenkins dashboard" >> Add "View" (+ button on tab)
 			View: MyTestDeliveryPipeline
@@ -233,3 +233,21 @@ Jenkins Beginner Tutorial 14 - How to setup DELIVERY PIPELINE in Jenkins (Step b
 				- Name: 		My Build Job
 			Save
 	
+-- --------------------------
+Jenkins Beginner Tutorial 15 - How to setup BUILD PIPELINE in Jenkins (Step by Step)
+
+Also refer Tutoria #14
+	Step1: Chain required Jobs in sequence (using Build Triggers in DeployJob and TestJob)
+	
+	Step2: Install "Build Pipeline Plugin" OR Download : Build Pipeline Plugin (Plugin Id: ?build-pipeline-plugin)
+
+	Step3: Add Build Pipeline View:
+			"Jenkins dashboard" >> Add "View" (+ button on tab)
+			View: MyTestBuildPipeline
+			Select "Build Pipeline View"
+			Components >> Add
+				- Initial Job:	"Test4_Pipeline_BuildJob"
+				- Name: 		My Build Job
+			Save
+
+-- --------------------------
