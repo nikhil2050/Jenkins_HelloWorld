@@ -251,3 +251,11 @@ Also refer Tutoria #14
 			Save
 
 -- --------------------------
+Jenkins Beginner Tutorial 16 - What is BLUE OCEAN (How to get started)
+
+Note: Available for Jenkins v2.7+
+Install "Blue Ocean" plugin
+Switch to Blue Ocean from button provided on top.
+
+-- --------------------------
+
