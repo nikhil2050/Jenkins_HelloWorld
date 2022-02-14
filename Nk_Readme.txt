@@ -97,7 +97,7 @@ Configure Jenkins:
 -- --------------------------
 Jenkins Beginner Tutorial 7 - Getting started with JOBS
 
-New Item:
+New Item >> FREESTYLE PROJECT :
 	1. General
 	2. Source Code Management
 	3. Build Triggers
@@ -281,12 +281,67 @@ https://www.youtube.com/watch?v=jmm8DsosBqw&list=PLhW3qG5bs-L_ZCOA4zNPSoGbnVQ-rp
 
 -- --------------------------
 Jenkinsfile Beginner Tutorial 1 | What is Jenkinsfile | How to create jenkinsfile | Step by Step
-https://www.youtube.com/watch?v=RsD2nzPY0is&list=PLhW3qG5bs-L_ZCOA4zNPSoGbnVQ-rp_dG&index=21
+
+	Jenkins PIPELINE ?
+		- It is a way of Jenkins to implement CICD (Conti Integration + Delivery + Deployment)
+		- All foll. Jobs are integrated with Jenkins Pipeline: 
+			- Build > Deploy > Test > Release
+
+	Jenkinsfile ?
+		- Pipeline as a code
+
+	Reqd. plugin: Pipeline Plugin
+
+Write Jenkinsfile script in Pipeline:
+	Step1: New Item: "PipelineOne" >> Pipeline >> OK
+		1. General
+		2. Build Triggers
+		3. Advanced Project Options
+		4. Pipeline
+
+	Step2: Create or get Jenkinsfile in #4 Pipeline section.
+		- Pipeline (Definition) : Select "Pipeline script"
+		- Script:
+			pipeline {
+				agent any
+				
+				stages {
+					stage('Deploy') {
+						steps {
+							echo "Deploying.."
+						}
+					}
+					stage('Test') {
+						steps {
+							echo "Testing.."
+						}
+					}
+					stage('Release') {
+						steps {
+							echo "Releasing.."
+						}
+					}
+				}
+			}
+		- NOTE: Click on "Pipeline Syntax" for referring all syntaxes
+	
+	Step3: Apply >> Save
+	Step4: Build now >> See chart
 
 -- --------------------------
 Jenkinsfile Beginner Tutorial 2 | How to get Jenkinsfile from Git SCM
-https://www.youtube.com/watch?v=8IWH1cYVZt4&list=PLhW3qG5bs-L_ZCOA4zNPSoGbnVQ-rp_dG&index=22
 
+Get Jenkinsfile from SCM:
+	Step1: As above
+	Step2: Get Jenkinsfile from SCM in #4 Pipeline section.
+		- Pipeline (Definition) : Select "Pipeline script from SCM"
+			- SCM		: Git
+			- Repo Url	: https://github.com/Raghav-Pal/JenkinsPipelineDemo
+			- Script Path: Jenkinsfile
+	...
+	...
+	...
+	
 -- --------------------------
 Jenkinsfile Beginner Tutorial 3 | Jenkins Pipeline | How to clone a git repo using Jenkinsfile |
 https://www.youtube.com/watch?v=r5nfUWVlGH4&list=PLhW3qG5bs-L_ZCOA4zNPSoGbnVQ-rp_dG&index=23
